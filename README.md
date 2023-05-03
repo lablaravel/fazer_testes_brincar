@@ -12,6 +12,19 @@
 Estou fazendo experimentos e testes com esse projeto para massificar o meu conhecimento em Laravel.
 
 
+### Informações 
+Comando para criar no tinker um Tenant.
+ ```
+ $tenant = App\Models\Tenant::create(['id' => 'atmtelecom', 'plan' => 'free'])->domains()->create(['domain' => 'atmtelecom.localhost']);
+ ```
+
+
+### Para funcionar Asset no Tenant
+ Nessa variável que fica no **config/tenancy.php**, eu tenho que colocar false.
+````php
+'asset_helper_tenancy' => false,
+````
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
