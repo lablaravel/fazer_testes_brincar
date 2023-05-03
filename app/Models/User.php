@@ -24,6 +24,9 @@ class User extends Authenticatable
         'tenant_id',
         'email',
         'password',
+        'cellphone',
+        'cpf',
+        'cnpj'
     ];
 
     /**
@@ -43,5 +46,8 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'cellphone' => 'integer',
+        'cpf' => 'integer',
+        'cnpj' => 'integer'
     ];
 }
