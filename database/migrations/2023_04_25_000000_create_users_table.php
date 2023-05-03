@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignUuid('tenant_id')->references('id')->on('tenants')->onDelete('cascade');
             $table->string('name');          
-            $table->string('email')->unique();
+            $table->string('email')->unique();            
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('cpf');
+            $table->string('cnpj');
             $table->rememberToken();
             $table->timestamps();
         });
