@@ -39,8 +39,8 @@
                 </div>
 
                 <div class="mt-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    dfdfddfsdsdssdd
+                    <div class="grid dark:bg-red-100 grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                        <p class="dark:text-red-500">sdsd</p>
                     </div>                   
                        
 
